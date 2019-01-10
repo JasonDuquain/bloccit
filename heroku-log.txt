@@ -1,0 +1,10 @@
+Application error
+An error occurred in the application and your page could not be served. If you are the application owner, check your logs for details. You can do this from the Heroku CLI with the command
+heroku logs --tail
+
+
+Owner@Owner-PC MINGW64 ~/bloc/bloccit (checkpoint_deploying-to-prod)
+$ 2019-01-10T03:18:53.492290+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=jasonduquain-bloccit.herokuapp.com request_id=4410f658-247b-41e6-83a7-fa0b79a95c05 fwd="76.97.141.68" dyno= connect= service= status=503 bytes= protocol=https
+2019-01-10T03:18:53.863748+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=jasonduquain-bloccit.herokuapp.com request_id=9de88b8d-c1eb-4ddb-9030-2cbf06d70c69 fwd="76.97.141.68" dyno= connect= service= status=503 bytes= protocol=https
+2019-01-10T03:19:25.160222+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=jasonduquain-bloccit.herokuapp.com request_id=8c77b77e-0c4e-4a84-ab35-af7d1dd13d7c fwd="76.97.141.68" dyno= connect= service= status=503 bytes= protocol=https
+2019-01-10T03:19:26.288843+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=jasonduquain-bloccit.herokuapp.com request_id=494d84cd-59cc-4b8d-a342-c09dbb662e2c fwd="76.97.141.68" dyno= connect= service= status=503 bytes= protocol=https

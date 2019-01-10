@@ -2,7 +2,7 @@
 const app = require("./app");
 const http = require("http");
 
-const server = http.createServer(app);
+const server = http.createServer(app); // this line needs to be above the 'const port' variable below 
 
 const port = normalizePort(process.env.PORT || "3000");
 app.set("port", port);
@@ -24,4 +24,6 @@ function normalizePort(val) {
 server.on("listening", () => {
   console.log(`server is listening for requests on port ${server.address().port}`);
 });
+
+
 

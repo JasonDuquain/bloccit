@@ -11,7 +11,7 @@ $ 2019-01-10T03:18:53.492290+00:00 heroku[router]: at=error code=H10 desc="App c
 2019-01-10T03:19:25.160222+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=jasonduquain-bloccit.herokuapp.com request_id=8c77b77e-0c4e-4a84-ab35-af7d1dd13d7c fwd="76.97.141.68" dyno= connect= service= status=503 bytes= protocol=https
 2019-01-10T03:19:26.288843+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=jasonduquain-bloccit.herokuapp.com request_id=494d84cd-59cc-4b8d-a342-c09dbb662e2c fwd="76.97.141.68" dyno= connect= service= status=503 bytes= protocol=https
 
-
+test test
 
 
 

@@ -5,6 +5,10 @@ module.exports = (sequelize, DataTypes) => {
        type: DataTypes.STRING,
        allowNull: false
      },
+      userId: {
+     type: DataTypes.INTEGER,
+     allowNull: false
+    },
     body: {
        type: DataTypes.STRING,
        allowNull: false
@@ -19,7 +23,12 @@ module.exports = (sequelize, DataTypes) => {
     Post.belongsTo(models.Topic, {
        foreignKey: "topicId",
        onDelete: "CASCADE"
-     });  
+     });
+      Post.belongsTo(models.User, {
+         foreignKey: "userId",
+         onDelete: "CASCADE"
+      });
   };
   return Post;
 };
+

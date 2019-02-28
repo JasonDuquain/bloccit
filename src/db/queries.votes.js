@@ -22,6 +22,7 @@ module.exports = {
         vote.value = val;
         vote.save()
         .then((vote) => {
+            req.flash('notice', 'You already voted. Update your vote.') //added this for voting_assignment
           callback(null, vote);
         })
         .catch((err) => {

@@ -18,11 +18,12 @@ module.exports = {
     .then((vote) => {
 
  // #3
-      if(vote){
+      if (vote) {
         vote.value = val;
         vote.save()
         .then((vote) => {
-          callback(null, vote);
+            req.flash('notice', 'New vote recorded.') // added for favoriting assignment
+            callback(null, vote);
         })
         .catch((err) => {
           callback(err);
